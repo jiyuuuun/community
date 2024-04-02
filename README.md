@@ -1,23 +1,28 @@
-# Getting Started
 
-### Reference Documentation
-For further reference, please consider the following sections:
+### Convention
+#### Branch Strategy
+```
+main
+├─hotfix
+└─ develop (default)
+    └─ DOMAIN/이슈번호
+```
 
-* [Official Gradle documentation](https://docs.gradle.org)
-* [Spring Boot Gradle Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/3.2.4/gradle-plugin/reference/html/)
-* [Create an OCI image](https://docs.spring.io/spring-boot/docs/3.2.4/gradle-plugin/reference/html/#build-image)
-* [Spring Web](https://docs.spring.io/spring-boot/docs/3.2.4/reference/htmlsingle/index.html#web)
+#### Commit Message
+```javascript
+<type>: <description>
 
-### Guides
-The following guides illustrate how to use some features concretely:
+[optional body]
+```
 
-* [Accessing data with MySQL](https://spring.io/guides/gs/accessing-data-mysql/)
-* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
-* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
-* [Building REST services with Spring](https://spring.io/guides/tutorials/rest/)
-
-### Additional Links
-These additional references should also help you:
-
-* [Gradle Build Scans – insights for your project's build](https://scans.gradle.com#gradle)
-
+#### Commit Type
+| type      | 설명                                               |
+|-----------|--------------------------------------------------|
+| `feat`    | A new feature                                    |
+| `test`    | Adding new test or making changes to existing test |
+| `fix`     | A bug fix                                        |
+| `perf`    | A code that improves performance                 |
+| `docs`    | Documentation a related changes                  |
+| `refactor` | Changes for refactoring                      |
+| `build`   | Changes related to building the code             |
+| `chore`   | Changes that do not affect the external user     |
